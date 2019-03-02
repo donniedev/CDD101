@@ -1,0 +1,12 @@
+
+
+1. Project Licence: GNU License
+2. Authors of Project: Daniel Duda C00208007
+3. How to install project: cmd command to compile: make, cmd comand to run: ./execFile
+4. List of any required Libraries: C++11
+5. TO DO: 
+6. List of files and what they contain:
+	makefile- cmd commands to compile files	
+	Semaphore.h, Semaphore.cpp - c++ semaphore implementation
+	main.cpp - main function, semaphore, threads
+7. Any other relevent information:
