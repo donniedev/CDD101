@@ -35,8 +35,9 @@ bool Semaphore::Wait(const std::chrono::duration<R,P>& crRelTime)
 void Semaphore::Signal()
 {
   std::cout << m_uiCount;
+  std::cout << "  ";
 
       std::unique_lock< std::mutex > lock(m_mutex);
       ++m_uiCount;
-      m_condition.notify_one();
+      m_condition.notify_all();
 }
