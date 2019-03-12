@@ -8,7 +8,7 @@
 6. List of files and what they contain:
 	makefile- cmd commands to compile files
 	Semaphore.h, Semaphore.cpp - c++ semaphore implementation
-	Event.h, Event.cpp - c++ semaphore implementation
-	SafeBuffer.h, Safebuffer.cpp - c++ semaphore implementation
+	Event.h, Event.cpp - c++ event class
+	SafeBuffer.h, Safebuffer.cpp - c++ buffer
 	main.cpp - main function, semaphore, threads
 7. Any other relevent information:
