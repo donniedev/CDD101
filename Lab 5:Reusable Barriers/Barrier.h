@@ -44,12 +44,15 @@
 
 /* Code: */
 #pragma once
+#include "Semaphore.h"
+
+
 class Barrier{
   int numThreads;
 
 private:
-  theMutex = std::make_shared<Semaphore>(1);
-  theSemaphore = std::make_shared<Semaphore>(0);
+  std::shared_ptr<Semaphore> theMutex;
+  std::shared_ptr<Semaphore> theSemaphore;
  public:
   Barrier(int numThreads);
   virtual ~Barrier();

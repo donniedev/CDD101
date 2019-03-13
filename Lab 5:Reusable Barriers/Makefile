@@ -5,8 +5,8 @@ CFLAGS= -std=c++11 -pthread
 %.o: %.cpp
 	$(CC) -c -o $@ $< $(CFLAGS) $(DEBUGFLAGS)
 
-ALL: main.o Semaphore.o Barier.o
-	$(CC) -o execFile main.o Semaphore.o Barier.o $(CFLAGS) $(DEBUGFLAGS)
+ALL: main.o Semaphore.o Barrier.o
+	$(CC) -o execFile main.o Semaphore.o Barrier.o $(CFLAGS) $(DEBUGFLAGS)
 
 DEBUG: DEBUGFLAGS = -DDEBUG
 DEBUG: ALL

@@ -47,9 +47,18 @@
 #include "Semaphore.h"
 #include "Barrier.h"
 
-void wait(){
+Barrier::Barrier(int )
+{
+    theMutex = std::make_shared<Semaphore>(1);
+    theSemaphore = std::make_shared<Semaphore>(0);
+}
 
-  if(num_threads < 1 ){
+Barrier::~Barrier() {
+    //cout << "Barrier destructor " << this << endl;
+}
+void Barrier::wait(){
+
+  if(numThreads < 1 ){
     theMutex->Signal();
   }
   else{
