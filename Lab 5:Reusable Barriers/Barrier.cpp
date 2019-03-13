@@ -56,9 +56,10 @@ Barrier::Barrier(int )
 Barrier::~Barrier() {
     //cout << "Barrier destructor " << this << endl;
 }
-void Barrier::wait(){
 
 // This  method is not finished yet
+void Barrier::wait(){
+
   if(numThreads < 1 ){
     theMutex->Signal();
   }
