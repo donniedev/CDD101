@@ -58,6 +58,7 @@ Barrier::~Barrier() {
 }
 void Barrier::wait(){
 
+// This  method is not finished yet
   if(numThreads < 1 ){
     theMutex->Signal();
   }
